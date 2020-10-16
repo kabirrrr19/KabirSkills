@@ -53,18 +53,18 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-                <div class="col-sm-4 col-md-3 col-12">
-                    <h3>Our <br> Lipsmacking <br> Culinary <br> Creations</h3>
-                </div>
-                <div class="media">
+                <div class="media order-2 order-sm-1d">
                         <img src="./img/uthappizza.png" alt="Uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">  <!--  mr = margin right 3 -->
                         <div class="media-body">
                            <!--  This Div is visibally of no use -->
                         </div>
                 </div>
-                <div class="col-sm col-md col-6">
+                <div class="col-sm col-md col-6 order-3 order-sm-2  ">
                     <h2>Uthappizza <span class="badge badge-danger">HOT</span> <br class="d-xs-block d-none"> <span class="badge badge-pill badge-dark">$4.99</span></h2>
                     <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo pancakeneer.</p>
+                </div>
+                <div class="col-sm-4 col-md-3 col-12 order-1 order-sm-3">
+                    <h3>Our <br> Lipsmacking <br> Culinary <br> Creations</h3>
                 </div>
         </div>
 
@@ -86,19 +86,19 @@
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 col-12 flex-last">
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
-            <div class="media">
+            <div class="media order-2 order-sm-1">
                     <img src="./img/alberto.png" alt="Alberto" class="d-flex mr-3 img-thumbnail align-self-center">  <!--  mr = margin right 3 -->
                     <div class="media-body">
                        <!--  This Div is visibally of no use -->
                     </div>
             </div>
-            <div class="col-sm col-md col-6 flex-first">
+            <div class="col-sm col-md col-6 flex-first order-3 order-sm-2">
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
                 <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+            </div>
+            <div class="col-sm-4 col-md-3 col-12 flex-last order-1 order-sm-3">
+                <h3>Meet our <br> Culinary <br> Specialists</h3>
             </div>
         </div>
     </div>
@@ -140,9 +140,9 @@
                         <dt class="col-sm-2">Date and Time</dt>
                         <dd>
                             <label for="date"></label>
-                            <input type="datetime-local" placeholder="Date" id="birthdaytime" name="birthdaytime" class="col-12"> 
+                            <input type="date" placeholder="Date" min="datetime-local" max="2030-12-31" class="col-12"> 
                             <label for="date"></label>
-                            <input type="time" placeholder="time" id="birthdaytime" class="col-12">
+                            <input type="time" placeholder="time" class="col-12">
                         </dd>
                     </div>
                     <div class="form-group row">
